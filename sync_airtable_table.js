@@ -2,7 +2,7 @@ function syncFeedbacksToSheet() {
   // 1. Script Properties
   var apiKey = PropertiesService.getScriptProperties().getProperty("AIRTABLE_API_KEY");
   var baseId = PropertiesService.getScriptProperties().getProperty("AIRTABLE_BASE_ID");
-  var tableName = "Feedbacks";
+  var tableName = "Sheet1";
 
   if (!apiKey || !baseId) {
     Logger.log("Error: Airtable API key or Base ID not found in Script Properties. Please set them up.");
