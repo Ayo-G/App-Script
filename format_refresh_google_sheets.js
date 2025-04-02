@@ -4,7 +4,7 @@ function Refresh() {
   var spreadsheet = SpreadsheetApp.getActive();
 
   // Format column AB in the relevant sheets
-  var sheetsToFormat = ['Laundry Drop-off (evening)', 'Laundry Drop-off (morning)', 'Laundry Pickup', 'Lunch Club'];
+  var sheetsToFormat = ['Sheet1', 'Sheet2', 'Sheet3', 'Sheet4'];
   sheetsToFormat.forEach(function (sheetName) {
     var sheet = spreadsheet.getSheetByName(sheetName);
     if (sheet) {
