@@ -10,9 +10,9 @@ function syncFeedbacksToSheet() {
   }
 
   // 2. Get the Google Sheet
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Feedbacks");
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Sheet1");
   if (!sheet) {
-    Logger.log("Error: Sheet 'Feedbacks' not found. Please create it or adjust the sheet name.");
+    Logger.log("Error: Sheet 'Sheet1' not found. Please create it or adjust the sheet name.");
     return;
   }
 
