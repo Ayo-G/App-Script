@@ -15,10 +15,10 @@ function Refresh() {
   });
 
   // Insert and autofill columns for "Overview Dashboard"
-  var dashboardSheet = spreadsheet.getSheetByName("Overview Dashboard"); // Reference the sheet by name
+  var dashboardSheet = spreadsheet.getSheetByName("sampleSheet"); // Reference the sheet by name
 
   if (!dashboardSheet) {
-    Logger.log("Sheet 'Overview Dashboard' does not exist.");
+    Logger.log("Sheet 'sampleSheet' does not exist.");
     return; // Exit the function if the sheet is not found
   }
 
