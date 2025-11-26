@@ -1,0 +1,25 @@
+/**
+ * @OnlyCurrentDoc
+ */
+<!doctype html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <script>
+      // url is injected by the server-side template
+      (function(){
+        const url = '<?= url ?>';
+        try {
+          // Open the URL in a new tab - allowed as user-initiated
+          window.open(url, '_blank');
+        } catch (e) {
+          console.error('open failed', e);
+        }
+        // Close the modal after a short pause so the download can start
+        setTimeout(function(){ google.script.host.close(); }, 600);
+      })();
+    </script>
+  </body>
+</html>
